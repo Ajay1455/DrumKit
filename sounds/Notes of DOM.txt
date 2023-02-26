@@ -1,0 +1,122 @@
+Meine abhi itna hi type kia hai tumhare liye jitna ki class mein kraaya
+baki agar mere notes send krta to tum confuse ho jaate.
+
+
+DOM = Document Object Model
+         
+      Document = means full html
+      
+      Object = as we know everything in js is object
+    
+      Model = tree-like structure to make it easier to access and manage the elements 
+              like dom have its own model like html is main parents and it has 2 childrens 
+                1. Head
+                2. Body
+
+1. how to select any element by id
+
+ document.getElementById("id of any element") --- now this means it select the element with the id u put.
+
+ now u can store this in any variable
+
+ step 1. like this.  var a = document.getElementById("id of any element");
+            
+ step 2. now u can see by console.log(a) --> to see which element is select
+
+ step 3. now u can change the selected element html or style like this...
+         
+          this is to change html 
+          a.innerHTML="Any text u want to replace with selected element ";
+ 
+          this is use to change in css
+          a.style.color="any color u want to change ";
+
+
+
+After this now move to advance Level
+
+* Now lets change the link of any anchor tag
+
+ first of all we have to store selected element to any variable 
+ then we can its href(where we type link) .
+
+
+@ Suppose this is the anchor tag
+
+<a id="anchor" class="hot" href="https://www.google.com/">Google</a>
+
+
+this tag link open google and let suppose we have to change this link to instagram
+
+var e=(document.getElementById("anchor"));
+
+         e.setAttribute(     "href"  ,    "https://www.instagram.com/   ");
+                                ^                        ^
+                                |                        |
+                      this is attribute            this is what we want to change
+                         of element
+
+
+Events :
+
+1. click event in inline js and external js.
+   
+    first store target element .for eg. 
+    var a= getElementById("id of target element");
+
+    then use a event named : onclick then assigned it with an function like this
+    a.onclick=(function(){ console.log("this is click event ") })
+  
+
+
+a. DOM CREATE METHODS:
+
+  1. to create tag -> createElement
+      ex.1 var newElement =document.createElement("h2");     
+
+  2. to create text -> createTextNode
+  3. to create comment -> createComment
+
+
+
+b. DOM Append Methods:
+
+  1. to append text in p tag -> appendChild
+
+     ex.1 var Txt = document.createTextNode("Text ,which we want to append")
+          var element =document.createElement("h2"); 
+
+          element.appendChild(Txt); => in this newText is inserted in element .
+ 
+          document.getElementById("id of element").appendChild(element);
+
+
+ 2. insertBefore having two arguments 1. what to append 2. before which element to append.
+
+    ex1: target.insertBefore(element, document.getElementById("txt").childNodes[0]);
+
+
+
+
+
+2. Event listener
+
+Add events like alert something while click on something or hover something.
+
+document.querySelector("element") = obj(this is called obj).
+
+@ Syntax : obj.addEventListener("event" , function or callfunction);
+  ex1. document.querySelector("target element").addEventListener("click", handleClick);
+       function handleClick(){
+       alert("I got clicked! ");
+       };
+
+Now one question if u understand Event listener.
+question 1. button to change css of background color
+
+
+
+3. onInput.
+
+
+
