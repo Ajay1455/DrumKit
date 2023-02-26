@@ -53,10 +53,6 @@ footer {
 
 .set {
   margin: 10% auto;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-evenly;
-  align-items:center
 }
 
 .game-over {
@@ -71,11 +67,6 @@ footer {
 
 .red {
   color: red;
-}
-
-button{
-      height: 20rem;
-      width: 20rem;
 }
 
 .drum {
@@ -99,4 +90,21 @@ button{
 .press{
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .set {
+     margin: 10% auto;
+     display:flex;
+     flex-direction:column;
+     justify-content:space-evenly;
+     align-items:center
+  }
+  
+  button{
+      height: 20rem;
+      width: 20rem;
+      }
+
 }
