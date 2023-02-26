@@ -53,6 +53,10 @@ footer {
 
 .set {
   margin: 10% auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center
 }
 
 .game-over {
@@ -67,6 +71,11 @@ footer {
 
 .red {
   color: red;
+}
+
+button{
+      height: 20rem;
+      width: 20rem;
 }
 
 .drum {
