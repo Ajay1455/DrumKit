@@ -4,7 +4,7 @@
 
 # Drum Kit Project using HTML, CSS, and JavaScript
 
-![Drum Kit Screenshot](screenshot.png)
+![Drum Kit Screenshot](https://i.postimg.cc/Kc50GcD5/Screenshot-658.png)
 
 ## Description
 
